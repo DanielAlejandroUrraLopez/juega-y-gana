@@ -1,0 +1,5 @@
+{
+    "name": "application",
+    "private": true
+  }
+  

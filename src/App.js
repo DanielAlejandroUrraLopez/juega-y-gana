@@ -11,14 +11,14 @@ import {
 import WheelOfFortune from 'react-native-wheel-of-fortune';
 
 const participants = [
-  'Descuento %10',
-  'Descuento %20',
-  'Descuento %30',
-  'Descuento %40',
-  'Descuento %50',
-  'Descuento %60',
-  'Descuento %70',
-  'Descuento %90',
+  '%10',
+  '%20',
+  '%30',
+  '%40',
+  '%50',
+  '%60',
+  '%70',
+  '%90',
   'GRATIS',
 ];
 class App extends Component {
@@ -50,11 +50,16 @@ class App extends Component {
       duration: 6000,
       backgroundColor: 'transparent',
       textAngle: 'horizontal',
-      knobSource: require('./knob.png'),
+      knobSource: require('./ui/assets/knob.png'),
       onRef: ref => (this.child = ref),
     };
     return (
       <View style={styles.container}>
+        {this.state.winnerIndex != null && (
+        <Text style={styles.winnerText}>
+            Tú ganas {participants[this.state.winnerIndex]}
+            </Text>
+        )}
         <StatusBar barStyle={'light-content'} />
         <WheelOfFortune
           options={wheelOptions}
@@ -73,9 +78,7 @@ class App extends Component {
         )}
         {this.state.winnerIndex != null && (
           <View style={styles.winnerView}>
-            <Text style={styles.winnerText}>
-            Tú ganas {participants[this.state.winnerIndex]}
-            </Text>
+            
             <TouchableOpacity
               onPress={() => {
                 this.setState({winnerIndex: null});
@@ -97,7 +100,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#E74C3C'
+    backgroundColor: 'white'
   },
   startButtonView: {
     position: 'absolute',
