@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "521534678959",
+    "project_id": "juega-y-gana-14df3",
+    "storage_bucket": "juega-y-gana-14df3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521534678959:android:56b8cbf857712f316d315a",
+        "android_client_info": {
+          "package_name": "com.juega_y_gana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521534678959-tm5t9kafchlt5ltvaasjqk2ggitiu0b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRyKb0twStpP0h7QiJAoZ2BR34i9Zgw9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521534678959-tm5t9kafchlt5ltvaasjqk2ggitiu0b7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521534678959-lg05dhbkojissfs9rmhev50d4i0ncua1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cl.danieldevelop.juegaygana"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
